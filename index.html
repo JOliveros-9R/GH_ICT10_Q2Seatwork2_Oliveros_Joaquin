@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Student Grade Calculator</title>
+    <style>
+        div {
+            color: rgb(63, 92, 118);
+            border: 3px gray;
+            background-color: antiquewhite;
+            font-size: 25px;
+        }
+
+        body {
+            color: skyblue;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Grade Calculator</h1>
+     <form>
+        <input type="text" id="firstname" placeholder="Enter your First Name"><br>
+        <input type="text" id="lastname" placeholder="Enter your Last Name"><br>
+    </form>
+
+      <h2>Enter your Grades:</h2>
+      <form>
+        <input type="number" placeholder="Enter your English Grade" id="subj1">
+        <br>
+        <input type="number" placeholder="Enter your Math Grade" id="subj2">
+        <br>
+        <input type="number" placeholder="Enter your Science Grade" id="subj3">
+        <br>
+        <input type="number" placeholder="Enter your SS Grade" id="subj4">
+        <br>
+        <input type="number" placeholder="Enter your PE Grade" id="subj5">
+        <br>
+        <input type="number" placeholder="Enter your TLE Grade" id="subj6">
+        <br>
+        <button py-click="getting_data" value="Collect" type="button">Get Data</button>
+        <button py-click="getting_gwa" value="Collect" type="button">Compute GWA</button>
+    </form>
+    <div id="display"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
