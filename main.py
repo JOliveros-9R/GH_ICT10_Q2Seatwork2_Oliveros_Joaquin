@@ -30,5 +30,7 @@ def getting_gwa(e):
  sum = add /6
  display(f'Your General Weighted Average is {sum:.2f}', target='display')
 
- if sum >= 75: display("Result: PASSED", target='display') 
- else: display("Result: FAILED", target='display')
+ if sum >= 75: 
+  display("Result: PASSED", target='display') 
+else: 
+  display("Result: FAILED", target='display')
