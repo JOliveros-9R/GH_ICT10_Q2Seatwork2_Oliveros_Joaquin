@@ -27,4 +27,8 @@ def getting_gwa(e):
  subj6 = float(document.getElementById('subj6').value)
  add = subj1 + subj2 + subj3 + subj4 + subj5 + subj6 
  sum = add /6
+
  display(f'Your General Weighted Average is {sum:.2f}', target='display')
+
+if sum >= 75: display("Result: PASSED", target='display') 
+else: display("Result: FAILED", target='display')
